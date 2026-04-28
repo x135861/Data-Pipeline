@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "485345113093",
+    "project_id": "iitti-community-platform",
+    "storage_bucket": "iitti-community-platform.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485345113093:android:ca8a8f7d40219ff997986c",
+        "android_client_info": {
+          "package_name": "com.example.iitti_community_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1TikmwQY4ev_D0jN9NqHZJrAox0Fyk4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

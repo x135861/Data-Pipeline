@@ -1,0 +1,27 @@
+name: iitti_community_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ML / Toxicity Filter (working)
+  profanity_filter: ^2.0.0
+
+  # Firebase
+  firebase_core: ^2.24.2
+  cloud_firestore: ^4.15.8
+  firebase_auth: ^4.17.0
+  google_sign_in: ^6.2.1
+
+  flutter_lints: ^6.0.0
+
+
+flutter:
+  uses-material-design: true
