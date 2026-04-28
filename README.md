@@ -1,137 +1,133 @@
-Iitti Community App
-The Iitti Community App is a cross‑platform community engagement application built with Flutter and Firebase. It enables residents of Iitti to share updates, request help, offer services, and stay connected in real time.
+<div align="center">
 
-Features
-Cross‑Platform
-Runs on Android, iOS, and Web using a single Flutter codebase.
+# 🏘️ Iitti Community App
 
-Secure Authentication
-Firebase Authentication
+**A cross-platform community engagement app built with Flutter & Firebase**
 
-Email/password login
+Enabling residents of Iitti to share updates, request help, offer services, and stay connected — in real time.
 
-Role‑based admin access
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Material 3](https://img.shields.io/badge/Material_3-757575?style=for-the-badge&logo=material-design&logoColor=white)
 
-Real‑Time Updates
-Firestore Streams
+</div>
 
-Instant UI refresh
+---
 
-Live posts, notices, events, and services
+## ✨ Features
 
-Admin Moderation
-User‑submitted services go to a Pending state
+| Feature | Description |
+|---|---|
+| 📱 **Cross-Platform** | Runs on Android, iOS, and Web from a single Flutter codebase |
+| 🔐 **Secure Authentication** | Firebase Auth with email/password login and role-based admin access |
+| ⚡ **Real-Time Updates** | Firestore Streams for instant UI refresh on posts, notices, events, and services |
+| 🛡️ **Admin Moderation** | User-submitted services enter a pending state — admin approves or rejects before going public |
+| 🚫 **Content Safety** | Profanity filter applied to all user-generated text |
+| 🏗️ **Clean Architecture** | Clear separation of UI, authentication, database, and filtering layers |
 
-Admin approves or rejects before public visibility
+---
 
-Content Safety
-Profanity filter on all user‑generated text
+## 🗂️ Project Structure
 
-Prevents offensive or harmful content
-
-Clean Architecture
-Separation of UI, authentication, database, and filtering
-
-Easy to maintain and extend
-
-Tech Stack
-Frontend
-Flutter (Material 3)
-
-Dart
-
-Backend
-Firebase Authentication
-
-Cloud Firestore (NoSQL real‑time database)
-
-Content Safety
-profanity_filter
-
-Tooling
-flutter_test
-
-flutter_lints
-
-Project Structure
-Code
+```
 lib/
- ├── auth/            # Login, register, admin check
- ├── screens/         # UI screens (Home, Help, Services, Admin, etc.)
- ├── widgets/         # Reusable UI components
- ├── models/          # Data models
- ├── services/        # Firestore interactions
- └── main.dart        # App entry point
-Firebase Services Used
-Firebase Core
-Initializes Firebase in the app.
+├── auth/            # Login, register, admin check
+├── screens/         # UI screens (Home, Help, Services, Admin, etc.)
+├── widgets/         # Reusable UI components
+├── models/          # Data models
+├── services/        # Firestore interactions
+└── main.dart        # App entry point
+```
 
-Firebase Authentication
-Handles:
+---
 
-Login
+## 🔥 Firebase Services
 
-Registration
+### Firebase Authentication
+- Email/password login
+- User registration
+- Admin role detection
 
-Admin role detection
+### Cloud Firestore
+Stores and streams in real time:
+- Posts
+- Help requests & offers
+- Notices & events
+- Services (pending and approved)
 
-Cloud Firestore
-Stores:
+---
 
-Posts
+## 🛠️ Tech Stack
 
-Help requests
+**Frontend**
+- Flutter (Material 3)
+- Dart
 
-Help offers
+**Backend**
+- Firebase Authentication
+- Cloud Firestore (NoSQL real-time database)
 
-Notices
+**Content Safety**
+- `profanity_filter`
 
-Events
+**Tooling**
+- `flutter_test`
+- `flutter_lints`
 
-Services (pending and approved)
+---
 
-Provides real‑time updates via Streams.
+## 🚀 Installation & Setup
 
-Security Considerations
-Firebase Provides
-Authentication
-
-Data encryption
-
-Secure communication
-
-Potential Vulnerabilities (if launched publicly)
-Admin role stored client‑side
-
-Firestore rules must be hardened
-
-No rate limiting
-
-Client‑side validation can be bypassed
-
-Recommended Improvements
-Use Firebase Custom Claims for admin
-
-Add strict Firestore security rules
-
-Add server‑side validation with Cloud Functions
-
-Installation & Setup
-Clone the repository
-Code
+**1. Clone the repository**
+```bash
 git clone https://github.com/x135861/Data-Pipeline.git
-Install dependencies
-Code
+```
+
+**2. Install dependencies**
+```bash
 flutter pub get
-Run the app
-Code
+```
+
+**3. Run the app**
+```bash
 flutter run
-Testing
-Code
+```
+
+**4. Run tests**
+```bash
 flutter test
-License
+```
+
+---
+
+## 🔒 Security Considerations
+
+### Firebase Provides
+- Authentication
+- Data encryption
+- Secure communication
+
+### ⚠️ Potential Vulnerabilities (if launched publicly)
+- Admin role currently stored client-side
+- Firestore security rules must be hardened
+- No rate limiting in place
+- Client-side validation can be bypassed
+
+### ✅ Recommended Improvements
+- Use **Firebase Custom Claims** for admin roles
+- Add **strict Firestore security rules**
+- Add **server-side validation** via Cloud Functions
+
+---
+
+## 📄 License
+
 This project is for educational and community development purposes.
 
-Author
-Susan Pandey  
-Flutter Developer • Firebase Integration • Community App Builder
+---
+
+## 👩‍💻 Author
+
+**Susan Pandey**
+Flutter Developer · Firebase Integration · Community App Builder
